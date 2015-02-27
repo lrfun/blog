@@ -1,0 +1,19 @@
+<article class="post-item">
+    <header class="article__title">
+        <a href="/detail/<%=article.id %>" class="post-item__title"><%=article.title %></a>
+    </header>
+
+    <footer class="article__meta post-item__meta">
+    <!--标签-->
+    <span class="tags">
+    <% if(article.tagArr && article.tagArr.length > 0){ %> 
+        <%-partial('partials/tagItem',{collection:article.tagArr,as:'tag'}) %>
+    <%}else{}%>
+    </span>
+
+    <!--时间-->
+    <span class="date">
+            <i class="fa fa-calendar"></i><span><%=article.createdAt%></span>
+    </span>
+    </footer>
+</article>

@@ -1,0 +1,39 @@
+<div id="bdw">
+    <div id="bd">
+        <div class="content">
+            <article class="post">
+                <header class="article__title"><h1><%=article.title %></h1>
+
+                    <p class="nick">
+                    <i class="fa fa-user"></i><span><%=article.author %></span>
+                    <span class="date"><i class="fa fa-calendar"></i><span><%=article.createdAt %></span></span>
+                    </p>
+                </header>
+
+                <%-article.content %>
+
+                <footer>
+                    <!--tag标签-->
+                    <div class="meta article__meta">
+
+                        <span class="tags">
+                        <% if(article.tagArr && article.tagArr.length > 0){ %> 
+                            <%-partial('partials/tagItem',{collection:article.tagArr,as:'tag'}) %>
+                        <%}else{}%>
+                        </span>
+                       
+                    </div>
+                    <hr>
+                    <!-- 下一篇 -->   
+                    <p class="siblings cf">
+                        <a href="#" class="next">
+                            <i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </p> 
+                </footer>
+                <!-- 评论 -->
+                <wb:comments url="auto" width="auto" appkey="3620643001" ></wb:comments>
+            </article>
+        </div>
+    </div>
+</div>

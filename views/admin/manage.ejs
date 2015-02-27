@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joychao <joy@joychao.cc>"> 
+    <link rel="shortcut icon" href="http://static.wangyin.com/member/v1.1.1/img/favicon/favicon.ico"/>   
+  </head>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link class="bootstrap library" rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/js/sandbox/bootstrap-2.2.0/css/bootstrap.min.css">
+	<script class="bootstrap library" src="http://sandbox.runjs.cn/js/sandbox/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script class="bootstrap library" src="http://sandbox.runjs.cn/js/sandbox/bootstrap-2.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1><caption>文章管理</caption></h1>
+        <table class="table table-bordered">
+          
+           <thead>
+              <tr>
+                 <th>标题</th>
+                 <th>创建时间</th>
+                 <th>操作</th>
+              </tr>
+           </thead>
+           <tbody>
+               <% if(articles && articles.length > 0){ %> 
+                  <%-partial('partials/manageItem',{collection:articles,as:'article'}) %>
+              <%}else{}%>
+           </tbody>
+        </table>
+
+    </div> <!-- /container -->
+  </body>
+  <script type="javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8b430919283504148e72bdee14b1d6a0' type='text/javascript'%3E%3C/script%3E"));   
+</script>
+</html>

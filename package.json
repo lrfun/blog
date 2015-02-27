@@ -1,0 +1,24 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "express": "3.2.5",
+    "ejs": "0.8.4",
+    "xss":"0.0.5",
+    "crypto":"0.0.3",
+    "express-partials": "*",
+    "connect-flash":"0.1.1",
+    "mongoose":"3.6.11",
+    "eventproxy":"0.2.3",
+    "data2xml":"0.8.0",
+    "static-favicon": "~1.0.0",
+    "ueditor": "^1.0.0",
+    "ndir":"*"
+  }
+}

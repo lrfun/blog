@@ -1,0 +1,19 @@
+<div id="bdw">
+    <div id="bd">
+        <div id="content">
+            <div class="pg-index__row">
+                <section class="section-box section-box--recentposts"><h4>最新文章</h4>
+
+                    <div class="section-box__content article-list">
+                            
+                            <% if(articles && articles.length > 0){ %> 
+                            <%-partial('partials/indexItem',{collection:articles,as:'article'}) %>
+                            <%}else{}%>
+
+                    </div>
+                    <footer class="more"><a href="/archives" class="btn">查看更多</a></footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

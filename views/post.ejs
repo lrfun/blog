@@ -1,0 +1,70 @@
+
+
+<div id="bdw">
+    <div id="bd">
+        <div class="pages content">
+              <form id='create_article_form' action='/article/post' method='post'>
+              <div class='inner'>
+                <div class="control-group">
+                    <label class="control-label">标题(*)</label>
+                    <div class="controls">
+                     <input type="text" class='span8' id='title' name='title' maxlength='100' style='width: 550px' required=true>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <label class="control-label">概述(*)</label>
+                    <div class="controls">
+                      <input type="text" class="span8" maxlength='100' style='width: 550px' name="description" required=true>                                
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">标签(必填，使用,分隔多个标签)</label>
+                    <div class="controls">
+                      <input type="text" class="span8" maxlength='100' style='width: 550px' name="tags" placeholder="" required=true>                                
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">作者(*)</label>
+                    <div class="controls">
+                      <input type="text" <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  name="author" value="<%=user.name %>" required=true>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">邮箱(*)</label>
+                    <div class="controls">
+                      <input type="text" <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  name="email" value="<%=user.email %>" required=true>
+                    </div>
+                  </div>
+                <div class='sep10'></div>
+                <div class='sep10'></div>
+                <div>
+                  <label class='bold' for='t_content'>内容(必填，可粘贴):</label>
+                  <div class='tabbable'>
+                    <div class='input'>
+                      <textarea id="ueditor" name="content"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='form-actions'>
+                    <input type='submit' id='submit_btn' class='btn' value="发布" />
+                </div>
+
+              <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+              <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+              <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"> </script>
+              
+                <script type='text/javascript'>
+                    window.UEDITOR_CONFIG.minFrameHeight = 1000;
+                    var editor = new baidu.editor.ui.Editor();
+                    editor.render('ueditor');
+                </script>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
