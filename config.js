@@ -5,7 +5,7 @@ module.exports = {
 	version:'0.0.1',
 	session_secret:'session.lrfun.com',
 	auth_cookie: 'cookies.lrfun.com',
-	db:'mongodb://baimo:baimo@ds049171.mongolab.com:49171/lrfun',//mongodb://127.0.0.1/wangyin
+	db:'mongodb://baimo:baimo@ds049171.mongolab.com:49171/lrfun',//mongodb://127.0.0.1/lrfun
 	host:'localhost',
 	page_size:10,
 	rss:{

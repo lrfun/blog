@@ -28,13 +28,13 @@
                 <a href="/index" id="index">首页</a>
                 <a href="/archives" id="archives">文章归档</a>
                 <a href="/about" id="about">关于我</a>
-                <a href="https://github.com/lrfun/tech-blog/" target="_blank">源码</a>
+                <a href="https://github.com/lrfun/blog/" target="_blank">源码</a>
             </nav>
             <form action="/search" method="post" class="search">
                 <input type="hidden" id="htype" value="<%=type %>">
                 <input type="text" name="keywords" placeholder="Search" class="search__input">
             </form>
-            <a href="https://github.com/lrfun/tech-blog" class="rss"></a>
+            <a href="https://github.com/lrfun/blog" class="rss"></a>
         </div>
     </header>
 
@@ -45,6 +45,7 @@
         |<a href="/post">发布文章
         <% if(user){ %>
             |<a href="/logout">登出</a>
+            |<a href="/manage">管理文章</a>
         <%} else{%>
             |<a href="/login">登录</a>
         <%}%>

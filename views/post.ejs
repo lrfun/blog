@@ -27,13 +27,15 @@
                   <div class="control-group">
                     <label class="control-label">作者(*)</label>
                     <div class="controls">
-                      <input type="text" <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  name="author" value="<%=user.name %>" required=true>
+                      <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  value="<%=user.name %>" required=true>
+                       <input type="hidden" name="author" value="<%=user.name %>">
                     </div>
                   </div>
                   <div class="control-group">
                     <label class="control-label">邮箱(*)</label>
                     <div class="controls">
-                      <input type="text" <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  name="email" value="<%=user.email %>" required=true>
+                      <input type="text" class="span8" maxlength='100' disabled="disabled" style='width: 550px'  value="<%=user.email %>" required=true>
+                      <input type="hidden" name="email" value="<%=user.email %>">
                     </div>
                   </div>
                 <div class='sep10'></div>
