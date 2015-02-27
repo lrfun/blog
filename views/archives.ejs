@@ -1,0 +1,16 @@
+
+<div id="bdw">
+    <div id="bd">
+        <div class="pages content"><h1 class="page-title">文章归档</h1>
+
+            <!--<h2 class="archives-year">2014</h2>-->
+
+            <div class="article-list">
+                 <% if(articles && articles.length > 0){ %> 
+                            <%-partial('partials/archiveItem',{collection:articles,as:'article'}) %>
+                            <%}else{}%>
+
+            </div>
+        </div>
+    </div>
+</div>

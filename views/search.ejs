@@ -1,0 +1,16 @@
+
+<div id="bdw">
+    <div id="bd">
+            <div class="pages content"><h1 class="page-title">
+                关键词：<%=keywords%>
+            </h1>
+            
+            <div class="section-box__content article-list">                
+                    <% if(articles && articles.length > 0){ %> 
+                    <%-partial('partials/indexItem',{collection:articles,as:'article'}) %>
+                    <%}else{}%>
+            </div>
+
+        </div>
+    </div>
+</div>
