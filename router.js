@@ -5,6 +5,10 @@ module.exports = function(app){
 	app.get("/index",index.index);
 	app.get("/",index.index);
 	app.get("/post",index.post);
+
+
+
+	
 	app.post("/article/post",index.doPost);
 
 	app.get("/archives",index.archives);
