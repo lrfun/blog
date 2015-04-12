@@ -65,7 +65,7 @@ transition:background .2s;
 #hd .site-nav .current:hover { padding:16px; background-color:#1E1E1E; -moz-box-shadow:inset 0 0 1px #FFF; box-shadow:inset 0 0 1px #FFF; box-shadow:none\9; }
 #hd .site-nav a:hover { background:#1E1E1E; }
 #hd .site-nav a:active { background:#1E1E1E; }
-#hd .search { position:absolute; top:9px; right:43px; }
+#hd .search { position:absolute; top:13px; right:43px; }
 #hd .search__input { height:26px; line-height:26px; padding:2px 5px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; }
 #hd .rss { position:absolute; right:0; top:17px; width:22px; height:22px; background:url(img/sp-icons.png) 0 0 no-repeat; }
 #hd .rss:hover { background-position:-23px 0; }
